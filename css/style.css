@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body{
+    background-color: #000;
+    font-family: Roboto Slab;
+}
+.container{
+    padding: 15px;
+    width: 50%;
+    margin: 30px auto;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+input{
+    margin: 5px;
+    width: 17px;
+    height: 17px;
+    /* position: relative;
+    display: none; */
+}
+/* input::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../img/check_mark_on20.png') center 100% no-repeat;
+} */
+button{
+    margin: 7px 5px;
+    padding: 4px;
+    font-family: Roboto Slab;
+}
+
+
+
+
+/* media */
+@media (max-width:500px) {
+    .container{
+        width: 90%;
+    }
+}
