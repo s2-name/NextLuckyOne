@@ -9,11 +9,12 @@
     <title>Выбор "следующего"</title>
 </head>
 <body>
+    <div class="header">Это техническая страница, если вы не имеете отношения к этому чебному заведению, пожалуйста, покиньте данный сайт, спасибо!</div>
     <div class="container">
         <input id="all" class="all" type="checkbox" checked>
-        <span>Все</span><br>
+        <label for="all">Все</label><br>
         <input id="borodulin" class="lastnames" type="checkbox" checked data-lastname="Бородулин" > 
-        <label for="borodulin">Бородулин</д><br>
+        <label for="borodulin">Бородулин</label><br>
         <input id="grabovsky" class="lastnames" type="checkbox" checked data-lastname="Грабовский" >
         <label for="grabovsky">Грабовский</label><br>
         <input id="ilichevaA" class="lastnames" type="checkbox" checked data-lastname="Ильичёва А" >
@@ -42,7 +43,9 @@
         <label for="shevelev">Шевелёв</label><br>
         <input id="shvetsov" class="lastnames" type="checkbox" checked data-lastname="Швецов">
         <label for="shvetsov">Швецов</label><br>
-        <button id="find">Найти</button>
+        <button id="find">Найти</button><br>
+        <input type="checkbox" id="autoUncheck">
+        <label for="autoUncheck">Снимать галочку с выпавших автоматически?</label><br>
         <div class="result">
             <span id="result"></span>
         </div>

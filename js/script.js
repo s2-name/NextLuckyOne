@@ -29,6 +29,10 @@ function findLuckyOne(){
     var arrLen = riskGroup.length;
     var randomNumber = parseInt(Math.random() * (arrLen - 0) + 0);
     document.getElementById('result').innerHTML = "Счастливчик: " + riskGroup[randomNumber].getAttribute('data-lastname');
+    if(document.getElementById('autoUncheck').checked){
+        riskGroup[randomNumber].checked = false;
+        updateAll();
+    }
 }
 
 function updateAll(){

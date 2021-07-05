@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 body{
     background-color: #000;
     font-family: Roboto Slab;
+}
+.header{
+    color: #fff;
+    width: 95%;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    background: #1e1e1e;
 }
 .container{
     padding: 15px;
@@ -14,29 +22,59 @@ input{
     margin: 5px;
     width: 17px;
     height: 17px;
-    /* position: relative;
-    display: none; */
+    display: none;
+    /* opacity: 0; */
 }
-/* input::after{
+label{
+    cursor: pointer;
+    display: inline-flex;
+}
+input+label::before{
     content: '';
-    position: absolute;
+    /* position: absolute; */
     width: 30px;
     height: 30px;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: url('../img/check_mark_on20.png') center 100% no-repeat;
-} */
+    /* top: 0; left: 0; right: 0; bottom: 0; */
+    background: url('../img/check_mark_off20.png') center 0 no-repeat;
+}
+input:checked+label::before{
+    background: url('../img/check_mark_on20.png') center 0 no-repeat;
+}
 button{
-    margin: 7px 5px;
+    margin: 7px 5px 15px;
     padding: 4px;
     font-family: Roboto Slab;
+    font-weight: bold;
+    background-color:#77B255;
+    border: 1px solid #367114;
+    transition: 0.2s;
+    cursor: pointer;
+}
+button:active{
+    background:#367114;
+    color:#fff;
 }
 
 
 
 
 /* media */
-@media (max-width:500px) {
+@media (max-width:880px) {
     .container{
         width: 90%;
+    }
+}
+@media (max-width:500px) {
+    .header{
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    body{
+        margin: 0;
     }
 }
