@@ -1,5 +1,5 @@
 # NextLuckyOne
-## ![Preview](https://s2-name.github.io/NextLuckyOne/)
+## [Preview](https://s2-name.github.io/NextLuckyOne/)
 ## Russian
 Страница с случайного выбора человека из списка. Создано благодаря HTML, CSS, JS. 
 ## English
